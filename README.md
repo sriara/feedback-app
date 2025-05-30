@@ -15,7 +15,7 @@
 <p> Visit: http://localhost:5000 </p>
 <hr>
 <h1>Ourput</h1>
-<img src="#" alt="image">
+<img src="feedback20app.jpg" alt="image">
     
 </body>
 </html>
