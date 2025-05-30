@@ -13,6 +13,9 @@
 <p>Install Flask:  pip install flask </p>
 <p>Run app:  python app.py </p>
 <p> Visit: http://localhost:5000 </p>
+<hr>
+<h1>Ourput</h1>
+<img src="#" alt="image">
     
 </body>
 </html>
