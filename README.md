@@ -15,7 +15,8 @@
 <p> Visit: http://localhost:5000 </p>
 <hr>
 <h1>Ourput</h1>
-<img src="feedback app.jpg" alt="image">
+<img width="294" alt="image" src="https://github.com/user-attachments/assets/d8e9a47d-89e1-4297-9d23-703678c8c45c" />
+
     
 </body>
 </html>
