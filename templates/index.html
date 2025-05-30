@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Collector</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Give Your Feedback</h1>
+        <form id="feedbackForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <textarea id="feedback" placeholder="Your Feedback" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script>
+        document.getElementById('feedbackForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const feedback = document.getElementById('feedback').value;
+            const res = await fetch('/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, feedback })
+            });
+            const result = await res.json();
+            document.getElementById('status').textContent = result.message;
+            document.getElementById('feedbackForm').reset();
+        });
+    </script>
+</body>
+</html>
